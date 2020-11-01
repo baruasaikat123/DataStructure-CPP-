@@ -42,19 +42,11 @@ int main(){
     s1.swap(s2);     // The swap() function is used to swap the content of the one stack with another stack of same type but the size may vary
     
     cout << "s1: ";
-    while(!s1.empty()){
-
-    	cout << s1.top() << " ";
-    	s1.pop();
-    }
+    showStack(s1);
     cout << endl;
 
     cout << "s2: ";
-    while(!s2.empty()){
-
-    	cout << s2.top() << " ";
-    	s2.pop();
-    }
+    showStack(s2);
     cout << endl;
 
 	return 0;
